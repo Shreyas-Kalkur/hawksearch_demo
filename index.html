@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified HawkSearch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>HawkSearch</h1>
+    
+    <!-- Search bar and upload icon -->
+    <div class="search-container">
+        <input type="text" id="textInput" class="search-bar" placeholder="Enter text to search...">
+        <div id="uploadArea" class="upload-area">
+            <img id="uploadIcon" src="./images/camera.png" alt="Upload Image" title="Click to upload image">
+        </div>
+    </div>
+    
+    <div id="productContainer" class="product-container"></div>
+
+    <!-- Popup Modal for Image Upload -->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Upload your file</h2>
+            <p>File should be an image</p>
+            <div id="dropZone" class="drop-zone">
+                <img src="./images/camera.png" class="upload-icon" alt="Upload">
+                <p>Drop your file here or Click to browse</p>
+                <input type="file" id="modalImageInput" accept="image/*" hidden>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
